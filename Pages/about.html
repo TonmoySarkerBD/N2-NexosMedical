@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexos Medical – Connecting Care with Innovation</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS + Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#e6f8fbcc] shadow-sm backdrop-blur-md">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button"
+                        class="hover:bg-[#31afe070] p-2 rounded-md text-xl lg:hidden text-[#3099b1]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[#d8f4fb] text-[#3099b1] rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="hover:bg-[#31afe070]" href="../index.html">Home</a></li>
+                        <li class="hover:bg-[#31afe070]"><a href="./services.html">Services</a></li>
+                        <li class="hover:bg-[#31afe070] font-bold"><a href="./about.html">About</a></li>
+                        <li class="hover:bg-[#31afe070]"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="text-xl flex items-center">
+                    <img src="../assets/logo.png" width="50" height="50" alt="">
+                    <span class="text-[#31afe0] font-bold text-2xl leading-5 ml-2">Nexo<br>Medical</span>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal rounded-2xl px-1 text-[#3099b1] text-xl">
+                    <li class="hover:bg-[#31afe070]"><a href="../index.html">Home</a></li>
+                    <li class="hover:bg-[#31afe070]"><a href="./services.html">Services</a></li>
+                    <li class="hover:bg-[#31afe070] font-bold"><a href="./about.html">About</a></li>
+                    <li class="hover:bg-[#31afe070]"><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div
+                    class="flex flex-col text-sm text-[#31afe0] border-2 border-[#31afe0] rounded-lg px-2 py-1 bg-white/30 backdrop-blur-sm">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main Section -->
+    <main class="mt-20">
+        <!-- About Nexos Medical -->
+        <section class="px-[5%] py-10 bg-[#e6f8fb] rounded-xl my-4 text-center">
+            <h2 class="text-3xl font-bold text-[#3099b1] mb-6">About Nexos Medical</h2>
+
+            <p class="mb-4 max-w-full mx-auto text-[#045b7b]">
+                <strong>Our Story:</strong> Nexos Medical began as a small clinic in Bogura, Bangladesh, dedicated to
+                providing
+                compassionate and accessible healthcare. Over the years, we've grown into a multidisciplinary medical
+                center,
+                combining modern medical technology with a patient-first approach.
+            </p>
+
+            <p class="mb-4 max-w-full mx-auto text-[#045b7b]">
+                <strong>Mission:</strong> Our mission is to ensure high-quality healthcare for all. We strive to empower
+                patients
+                with knowledge, provide expert diagnosis, and deliver world-class treatment in a caring, respectful
+                environment.
+            </p>
+
+            <p class="mb-4 max-w-full mx-auto text-[#045b7b]">
+                <strong>Our Services:</strong> Nexos Medical offers a wide range of services including general practice,
+                internal
+                medicine, pediatrics, diagnostics, minor surgery, and telemedicine support. Our team leverages modern
+                equipment and
+                digital record systems to provide fast, accurate, and efficient care.
+            </p>
+
+            <p class="mb-4 max-w-full mx-auto text-[#045b7b]">
+                We believe healthcare is more than medicine—it’s about building trust and lasting relationships with the
+                community
+                we serve.
+            </p>
+        </section>
+
+        <!-- Staff Profiles -->
+        <section class="px-[5%] py-10 text-center">
+            <h2 class="text-3xl font-bold text-center text-[#3099b1] mb-10">Meet Our Medical Team</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card bg-white shadow-sm">
+                    <figure class="max-h-72">
+                        <img src="https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Dr. Rahman" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="text-xl font-bold text-[#31afe0]">Dr. Rahman</h3>
+                        <p class="text-sm text-[#045b7b]">Chief Physician – 20+ years of experience in Internal Medicine
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-sm">
+                    <figure class="max-h-72">
+                        <img src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Dr. Amina" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="text-xl font-bold text-[#31afe0]">Dr. Amina</h3>
+                        <p class="text-sm text-[#045b7b]">Pediatric Specialist – Expert in child health & development
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-sm">
+                    <figure class="max-h-72">
+                        <img src="https://images.pexels.com/photos/18809796/pexels-photo-18809796/free-photo-of-beautician-in-black-uniform.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Nurse Luis" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="text-xl font-bold text-[#31afe0]">Nurse Luis</h3>
+                        <p class="text-sm text-[#045b7b]">Head Nurse – Patient care & clinical operations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Info -->
+        <section class="px-[5%] py-10 bg-[#d8f4fb] rounded-xl mb-10">
+            <h2 class="text-3xl font-bold text-center text-[#3099b1] mb-6">Contact Information</h2>
+
+            <div class="flex flex-col gap-10 px-[10%] lg:px-[20%] justify-between md:flex-row text-lg text-[#045b7b]">
+                <div>
+                    <p><strong>Address:</strong> Bogura, Bangladesh</p>
+                    <p><strong>Email:</strong> info@nexosmedical.com</p>
+                    <p><strong>Phone:</strong> +123-456-7890</p>
+                    <p><strong>Follow Us:</strong></p>
+                    <div class="flex space-x-4 text-2xl text-[#31afe0]">
+                        <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-facebook-f hover:text-[#15efff]"></i></a>
+                        <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-x-twitter hover:text-[#15efff]"></i></a>
+                        <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-instagram hover:text-[#15efff]"></i></a>
+                        <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in hover:text-[#15efff]"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <p><strong>Business Hours:</strong><br>
+                        Saturday – Wednesday : 9:00 AM – 5:00 PM<br>
+                        Thursday: 10:00 AM – 2:00 PM<br>
+                        Friday: Closed
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <fieldset
+                class="fieldset text-center bg-[#e6f8fb] border border-[#31afe0] rounded-box p-6 mx-[10%] md:mx-[30%]">
+                <h2 class="text-3xl font-bold text-[#3099b1] mb-6">Contact Us</h2>
+                <form id="contactForm" class="grid gap-4">
+                    <input type="text" placeholder="Name" class="input input-bordered w-full border-[#31afe0]"
+                        required />
+                    <input type="email" placeholder="Email" class="input input-bordered w-full border-[#31afe0]"
+                        required />
+                    <textarea placeholder="Message" class="textarea textarea-bordered w-full border-[#31afe0]" rows="4"
+                        required></textarea>
+
+                    <div class="flex justify-center">
+                        <button type="submit" id="submit-btn"
+                            class="btn bg-[#31afe0] text-white hover:bg-[#15efff] w-1/2">Submit</button>
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+
+
+        <!-- Modal Structure  + go js file-->
+        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+        <div class="modal" role="dialog">
+            <div class="modal-box bg-[#d8f4fb]">
+                <h3 class="text-lg font-bold">Thank you!</h3>
+                <p class="py-4">Your message has been submitted successfully.</p>
+                <div class="modal-action">
+                    <label for="my_modal_7" class="btn btn-success">Close</label>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-[#e6f8fb] text-[#3099b1] py-10 px-[5%] mt-16">
+        <div>
+            <div class="flex flex-col md:flex-row justify-between">
+
+                <!-- Brand & Description -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-3 text-[#31afe0]">Nexos Medical</h2>
+                    <p class="text-sm text-[#3099b1]">
+                        Delivering compassionate care and innovative medical solutions<br>
+                        through advanced technology, expert staff, and patient-first service.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-[#31afe0]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-[#15efff]">Home</a></li>
+                        <li><a href="./services.html" class="hover:text-[#15efff]">Services</a></li>
+                        <li><a href="./about.html" class="hover:text-[#15efff]">About Us</a></li>
+                        <li><a href="./faq.html" class="hover:text-[#15efff]">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-[#31afe0]">Contact Us</h3>
+                    <p class="text-sm mb-2">Email: contact@nexosmedical.com</p>
+                    <p class="text-sm mb-4">Phone: +880123456789</p>
+                    <div class="flex space-x-4 text-2xl text-[#31afe0]">
+                        <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-facebook-f hover:text-[#15efff]"></i></a>
+                        <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-x-twitter hover:text-[#15efff]"></i></a>
+                        <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-instagram hover:text-[#15efff]"></i></a>
+                        <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in hover:text-[#15efff]"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="mt-10 border-t-2 border-[#31afe0] pt-4 text-sm text-center text-[#3099b1]">
+                &copy; 2025 Nexos Medical. All rights reserved. Designed by
+                <a href="https://www.linkedin.com/in/tonmoysarkerbd/" class="hover:text-[#15efff]">@TonmoySarkerBD</a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Js/script.js"></script>
+    <script>
+        const form = document.getElementById('contactForm');
+        const modalCheckbox = document.getElementById('my_modal_7');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            form.reset();
+            modalCheckbox.checked = true;
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexos Medical – Connecting Care with Innovation</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS + Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./product.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#e6f8fbcc] shadow-sm backdrop-blur-md">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button"
+                        class="hover:bg-[#31afe070] p-2 rounded-md text-xl lg:hidden text-[#3099b1]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[#d8f4fb] text-[#3099b1] rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="hover:bg-[#31afe070]" href="../index.html">Home</a></li>
+                        <li class="hover:bg-[#31afe070]  font-bold"><a href="./services.html">Services</a></li>
+                        <li class="hover:bg-[#31afe070]"><a href="./about.html">About</a></li>
+                        <li class="hover:bg-[#31afe070]"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="text-xl flex items-center">
+                    <img src="../assets/logo.png" width="50" height="50" alt="">
+                    <span class="text-[#31afe0] font-bold text-2xl leading-5 ml-2">Nexo<br>Medical</span>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal rounded-2xl px-1 text-[#3099b1] text-xl">
+                    <li class="hover:bg-[#31afe070]"><a href="../index.html">Home</a></li>
+                    <li class="hover:bg-[#31afe070] font-bold"><a href="./services.html">Services</a></li>
+                    <li class="hover:bg-[#31afe070]"><a href="./about.html">About</a></li>
+                    <li class="hover:bg-[#31afe070]"><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div
+                    class="flex flex-col text-sm text-[#31afe0] border-2 border-[#31afe0] rounded-lg px-2 py-1 bg-white/30 backdrop-blur-sm">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main Section -->
+    <main class="mt-32">
+
+        <section class="my-12 px-[5%]">
+            <h2 class="text-3xl font-bold text-center text-[#3099b1] mb-10">Our Medical Services</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service 1 -->
+                <div class="card hover:bg-blue-50 bg-base-100 shadow-xl border border-blue-100">
+                    <figure>
+                        <img src="../assets/drone.png" alt="Telehealth Consultation"
+                            class="h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-[#2a9cb3]">Telehealth Consultation</h2>
+                        <p class="text-sm text-gray-600">Book virtual appointments with certified doctors anytime,
+                            anywhere.</p>
+                        <p class="text-lg font-semibold text-[#3099b1]">From ৳499/session</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-[#31afe070] hover:bg-[#31afe0b0] border-none text-white">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card hover:bg-blue-50 bg-base-100 shadow-xl border border-blue-100">
+                    <figure>
+                        <img src="../assets/s3.jpg" alt="Diagnostic Services"
+                            class="h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-[#2a9cb3]">Diagnostics & Lab Tests</h2>
+                        <p class="text-sm text-gray-600">Home sample collection & accurate lab reports delivered
+                            digitally.</p>
+                        <p class="text-lg font-semibold text-[#3099b1]">Starts at ৳299</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-[#31afe070] hover:bg-[#31afe0b0] border-none text-white">View Packages</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card hover:bg-blue-50 bg-base-100 shadow-xl border border-blue-100">
+                    <figure>
+                        <img src="../assets/app.png" alt="Online Pharmacy" class="h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-[#2a9cb3]">Online Pharmacy</h2>
+                        <p class="text-sm text-gray-600">Order medicines online with doorstep delivery and prescription
+                            uploads.</p>
+                        <p class="text-lg font-semibold text-[#3099b1]">Flat 10% Off</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-[#31afe070] hover:bg-[#31afe0b0] border-none text-white">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card hover:bg-blue-50 bg-base-100 shadow-xl border border-blue-100">
+                    <figure>
+                        <img src="../assets/soil.png" alt="Imaging & Radiology" class="h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-[#2a9cb3]">Imaging & Radiology</h2>
+                        <p class="text-sm text-gray-600">Advanced imaging including X-ray, MRI, CT scan & ultrasound
+                            services.</p>
+                        <p class="text-lg font-semibold text-[#3099b1]">Available on Request</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-[#31afe070] hover:bg-[#31afe0b0] border-none text-white">Schedule Test</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="card hover:bg-blue-50 bg-base-100 shadow-xl border border-blue-100">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/28123711/pexels-photo-28123711/free-photo-of-yellow-ambulance-car.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Emergency Response" class="h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-[#2a9cb3]">Emergency Response</h2>
+                        <p class="text-sm text-gray-600">24/7 ambulance service with trained paramedics across the city.
+                        </p>
+                        <p class="text-lg font-semibold text-[#3099b1]">Call: 16247</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-[#31afe070] hover:bg-[#31afe0b0] border-none text-white">Request
+                                Ambulance</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="card hover:bg-blue-50 bg-base-100 shadow-xl border border-blue-100">
+                    <figure>
+                        <img src="../assets/s4.jpg" alt="Wellness Programs" class="h-72 w-full object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-[#2a9cb3]">Health & Wellness Plans</h2>
+                        <p class="text-sm text-gray-600">Personalized wellness plans with nutrition, fitness, and mental
+                            health support.</p>
+                        <p class="text-lg font-semibold text-[#3099b1]">Custom Pricing</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn bg-[#31afe070] hover:bg-[#31afe0b0] border-none text-white">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Top Benefits Section -->
+        <section class="my-12 px-[5%]">
+            <h3 class="text-2xl font-bold text-center text-[#3099b1] mb-4">Top Benefits of Nexos Medical Services</h3>
+            <ul class="grid md:grid-cols-2 gap-2 custom-list text-lg text-gray-700">
+                <li>✔️ Personalized care plans for every patient</li>
+                <li>✔️ Access to experienced specialists and consultants</li>
+                <li>✔️ Seamless telemedicine for remote consultations</li>
+                <li>✔️ Modern diagnostics with fast lab results</li>
+                <li>✔️ Friendly support team and 24/7 service access</li>
+                <li>✔️ Secure digital records and easy appointment tracking</li>
+            </ul>
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-[#e6f8fb] text-[#3099b1] py-10 px-[5%] mt-16">
+        <div>
+            <div class="flex flex-col md:flex-row justify-between">
+
+                <!-- Brand & Description -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-3 text-[#31afe0]">Nexos Medical</h2>
+                    <p class="text-sm text-[#3099b1]">
+                        Delivering compassionate care and innovative medical solutions<br>
+                        through advanced technology, expert staff, and patient-first service.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-[#31afe0]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-[#15efff]">Home</a></li>
+                        <li><a href="./services.html" class="hover:text-[#15efff]">Services</a></li>
+                        <li><a href="./about.html" class="hover:text-[#15efff]">About Us</a></li>
+                        <li><a href="./faq.html" class="hover:text-[#15efff]">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-[#31afe0]">Contact Us</h3>
+                    <p class="text-sm mb-2">Email: contact@nexosmedical.com</p>
+                    <p class="text-sm mb-4">Phone: +880123456789</p>
+                    <div class="flex space-x-4 text-2xl text-[#31afe0]">
+                        <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-facebook-f hover:text-[#15efff]"></i></a>
+                        <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-x-twitter hover:text-[#15efff]"></i></a>
+                        <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-instagram hover:text-[#15efff]"></i></a>
+                        <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in hover:text-[#15efff]"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="mt-10 border-t-2 border-[#31afe0] pt-4 text-sm text-center text-[#3099b1]">
+                &copy; 2025 Nexos Medical. All rights reserved. Designed by
+                <a href="https://www.linkedin.com/in/tonmoysarkerbd/" class="hover:text-[#15efff]">@TonmoySarkerBD</a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Js/script.js"></script>
+</body>
+
+</html>

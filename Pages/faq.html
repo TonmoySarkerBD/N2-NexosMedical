@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexos Medical – Connecting Care with Innovation</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS + Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#e6f8fbcc] shadow-sm backdrop-blur-md">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button"
+                        class="hover:bg-[#31afe070] p-2 rounded-md text-xl lg:hidden text-[#3099b1]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[#d8f4fb] text-[#3099b1] rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="hover:bg-[#31afe070]" href="../index.html">Home</a></li>
+                        <li class="hover:bg-[#31afe070]"><a href="./services.html">Services</a></li>
+                        <li class="hover:bg-[#31afe070]"><a href="./about.html">About</a></li>
+                        <li class="hover:bg-[#31afe070] font-bold"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <a href="./index.html" class="text-xl flex items-center">
+                    <img src="../assets/logo.png" width="50" height="50" alt="">
+                    <span class="text-[#31afe0] font-bold text-2xl leading-5 ml-2">Nexo<br>Medical</span>
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal rounded-2xl px-1 text-[#3099b1] text-xl">
+                    <li class="hover:bg-[#31afe070]"><a href="../index.html">Home</a></li>
+                    <li class="hover:bg-[#31afe070]"><a href="./services.html">Services</a></li>
+                    <li class="hover:bg-[#31afe070]"><a href="./about.html">About</a></li>
+                    <li class="hover:bg-[#31afe070] font-bold"><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div
+                    class="flex flex-col text-sm text-[#31afe0] border-2 border-[#31afe0] rounded-lg px-2 py-1 bg-white/30 backdrop-blur-sm">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main Section -->
+    <main class="mt-20">
+        <!-- FAQ Section -->
+        <section class="my-12 px-[5%] max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-[#3099b1] text-center mb-10">Frequently Asked Questions</h2>
+
+            <div class="space-y-4">
+
+                <!-- Q1 -->
+                <div class="collapse bg-base-100 border border-[#31afe0]">
+                    <input type="radio" name="faq-accordion" checked="checked" />
+                    <div class="collapse-title font-semibold bg-[#e6f8fb] text-[#045b7b]">
+                        What services does Nexos Medical provide?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        Nexos Medical offers general consultations, specialist care, diagnostic testing, minor
+                        procedures, and telemedicine.
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="collapse bg-base-100 border border-[#31afe0]">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold bg-[#e6f8fb] text-[#045b7b]">
+                        Do I need an appointment, or can I walk in?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        While walk-ins are welcome, we recommend booking an appointment to reduce wait time and ensure
+                        availability.
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="collapse bg-base-100 border border-[#31afe0]">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold bg-[#e6f8fb] text-[#045b7b]">
+                        Is telemedicine available?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        Yes, Nexos Medical offers secure virtual consultations with our doctors. Book online or call us
+                        to schedule.
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="collapse bg-base-100 border border-[#31afe0]">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold bg-[#e6f8fb] text-[#045b7b]">
+                        Do you accept health insurance?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        We accept most major health insurance providers. Please contact us to confirm coverage before
+                        your visit.
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="collapse bg-base-100 border border-[#31afe0]">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold bg-[#e6f8fb] text-[#045b7b]">
+                        How do I get my lab test results?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        Results are shared via our secure patient portal or can be collected in person. You’ll be
+                        notified when they're ready.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Extra Section -->
+        <section class="text-center mt-12">
+            <h3 class="text-2xl font-bold text-[#3099b1] mb-2">Still Have Questions?</h3>
+            <p class="mb-4 text-gray-600">Our care team is here to help—reach out 24/7 via phone, email, or visit our
+                help center.</p>
+            <a href="./about.html" class="btn bg-[#31afe0] hover:bg-[#2590b3] text-white px-6">Contact Support</a>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#e6f8fb] text-[#3099b1] py-10 px-[5%] mt-16">
+        <div>
+            <div class="flex flex-col md:flex-row justify-between">
+
+                <!-- Brand & Description -->
+                <div>
+                    <h2 class="text-2xl font-bold mb-3 text-[#31afe0]">Nexos Medical</h2>
+                    <p class="text-sm text-[#3099b1]">
+                        Delivering compassionate care and innovative medical solutions<br>
+                        through advanced technology, expert staff, and patient-first service.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-[#31afe0]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="hover:text-[#15efff]">Home</a></li>
+                        <li><a href="./services.html" class="hover:text-[#15efff]">Services</a></li>
+                        <li><a href="./about.html" class="hover:text-[#15efff]">About Us</a></li>
+                        <li><a href="./faq.html" class="hover:text-[#15efff]">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-[#31afe0]">Contact Us</h3>
+                    <p class="text-sm mb-2">Email: contact@nexosmedical.com</p>
+                    <p class="text-sm mb-4">Phone: +880123456789</p>
+                    <div class="flex space-x-4 text-2xl text-[#31afe0]">
+                        <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-facebook-f hover:text-[#15efff]"></i></a>
+                        <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-x-twitter hover:text-[#15efff]"></i></a>
+                        <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-instagram hover:text-[#15efff]"></i></a>
+                        <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in hover:text-[#15efff]"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="mt-10 border-t-2 border-[#31afe0] pt-4 text-sm text-center text-[#3099b1]">
+                &copy; 2025 Nexos Medical. All rights reserved. Designed by
+                <a href="https://www.linkedin.com/in/tonmoysarkerbd/" class="hover:text-[#15efff]">@TonmoySarkerBD</a>.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Js/script.js"></script>
+</body>
+
+</html>
